@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/383bdf2009.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora02</title>
+</head>
+<body>
+    <main class="conteiner">
+        <div class="calculadora">
+            <p class="result" id="resultado"></p>
+            <table><!--Tabela-->
+                <tr><!--Linha-->
+                    <td><button class="bot maior especial " onclick="clean()">ac</button></td><!--coluna-->
+                    <td><button class="bot neg"><i class="fa-solid fa-delete-left" onclick="backspace()"></i></button></td>
+                    <td><button class="bot especial"><i class="fa-solid fa-divide" onclick="insert('/')"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bot" onclick="insert('7')">7</button></td>
+                    <td><button class="bot" onclick="insert('8')">8</button></td>
+                    <td><button class="bot" onclick="insert('9')">9</button></td>
+                    <td><button class="bot especial"  onclick="insert('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bot" onclick="insert('4')">4</button></td>
+                    <td><button class="bot" onclick="insert('5')">5</button></td>
+                    <td><button class="bot" onclick="insert('6')">6</button></td>
+                    <td><button class="bot especial"  onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bot" onclick="insert('1')">1</button></td>
+                    <td><button class="bot" onclick="insert('2')">2</button></td>
+                    <td><button class="bot" onclick="insert('3')">3</button></td>
+                    <td><button class="bot especial" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bot" onclick="insert('0')">0</button></td>
+                    <td><button class="bot"  onclick="insert('.')">.</button></td>
+                    <td><button class="bot maior especial igual"  onclick="confirma()">=</button></td>
+                </tr>
+                
+            </table>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
